@@ -1,0 +1,21 @@
+<level>
+    
+    <region width="7000" height="7000" color="black" winColor="antiquewhite">
+        
+        <origin x="0%" y="0%"></origin>
+        
+        <generator x="0" y="0" width="100%" height="100%" num="2000">
+            
+            <rect width="2" height="2" color="orange"></rect>
+            
+        </generator>
+        
+        <door to="/hub" x="5%" y="10%" width="100" height="100" color="green"></door>
+        
+        <beach x="0" y="0" width="100%" height="100%" ripple="0.9,0.9"></beach>
+        
+        <song x="90%" y="90%" width="100" height="100" src="assets/thatwasme3.mp3" title="That Was Me"></song>
+        
+    </region>
+    
+</level>

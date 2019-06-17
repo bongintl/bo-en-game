@@ -1,0 +1,77 @@
+html {
+  height: 100%;
+  font-family: Helvetica, sans-serif; }
+
+body {
+  overflow: hidden;
+  height: 100%;
+  margin: 0; }
+
+main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s; }
+  main.fade-out {
+    opacity: 0; }
+
+.renderer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+  .renderer_css > div > * {
+    position: absolute;
+    overflow: hidden; }
+  .renderer_css iframe {
+    width: 100%;
+    height: 100%;
+    border: none; }
+  .renderer_css .sprite {
+    width: 0;
+    height: 0;
+    overflow: visible; }
+    .renderer_css .sprite div {
+      -webkit-transform: translate(-50%, -100%);
+              transform: translate(-50%, -100%);
+      background-size: contain;
+      background-position: center bottom;
+      background-repeat: no-repeat; }
+      .renderer_css .sprite div.character {
+        background-size: 100% 200%;
+        background-position: center top;
+        mix-blend-mode: difference;
+        background: black !important; }
+  .renderer_css .shadow {
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat; }
+
+.boading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 2em;
+  margin: 0; }
+
+.menu-button {
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  width: 141px;
+  height: 72px;
+  background: url("assets/menu.svg");
+  cursor: pointer; }
+
+.merch-label__name {
+  width: 80%;
+  float: left; }
+
+.merch-label__price {
+  float: right; }

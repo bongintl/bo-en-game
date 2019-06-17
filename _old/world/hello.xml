@@ -1,0 +1,25 @@
+<level background="white">
+    
+    <region x="0" y="0" width="2000" height="2000" color="white">
+        
+        <origin x="0" y="65%"></origin>
+        
+        <song x="0" y="0" width="100" height="100" src="assets/bo_en_sometimes.mp3" title="Sometimes"></song>
+        
+        <door x="0" y="-150" width="100" height="100" to="/hub" color="yellow" hidden="true"></door>
+        
+        <rect x="25%" y="65%" width="848" image="assets/bo.png"></rect>
+        
+        <rect x="75%" y="50%" width="800" image="assets/en.png"></rect>
+        
+        <panel x="0" y="-300" width="500" image="assets/312B55CFDC924721.jpg"></panel>
+        
+        <panel x="0" y="1000" width="250" image="assets/8D330C67CCE2043.jpg" hidden="true"></panel>
+        
+        <panel x="40%" y="0" width="350" rotate="90" image="assets/2.jpg" hidden="true"></panel>
+        
+        <panel x="70%" y="90%" width="250" rotate="360" image="assets/2.jpg" hidden="true"></panel>
+        
+    </region>
+    
+</level>

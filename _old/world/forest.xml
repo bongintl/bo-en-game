@@ -1,0 +1,25 @@
+<level background="#ffeeee">
+    
+    <region x="0" y="0" width="10000" height="10000" color="#ffeeee">
+        
+        <origin x="50%" y="0%"></origin>
+        
+        <door to="/hub" x="10%" y="0" width="100" height="100" color="green"></door>
+        
+        <forest x="0" y="0" width="100%" height="100%" num="500">
+            
+            <sprite width="100" height="120" src="assets/tree1.png" shadow="assets/tree1_shadow.png"></sprite>
+            <sprite width="135" height="112" src="assets/tree2.png" shadow="assets/tree2_shadow.png"></sprite>
+            <sprite width="140" height="120" src="assets/tree3.png" shadow="assets/tree3_shadow.png"></sprite>
+            
+            <ellipse width="5%" height="5%" x="0" y="0" color="#ffeeee">
+                
+                <song x="0" y="0" width="100" height="100" src="assets/thatwasme3.mp3" title="That Was Me"></song>
+                
+            </ellipse>
+            
+        </forest>
+        
+    </region>
+    
+</level>

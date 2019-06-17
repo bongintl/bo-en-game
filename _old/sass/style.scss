@@ -1,0 +1,123 @@
+html {
+    
+    height: 100%;
+    font-family: Helvetica, sans-serif;
+    
+}
+
+body {
+    
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    
+}
+
+main {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s;
+    
+    &.fade-out {
+        
+        opacity: 0;
+        
+    }
+    
+}
+
+.renderer {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    &_css {
+        
+        & > div > * {
+            
+            position: absolute;
+            overflow: hidden;
+            
+        }
+        
+        iframe{
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .sprite {
+            width: 0;
+            height: 0;
+            overflow: visible;
+            
+            div {
+                transform: translate(-50%, -100%);
+                background-size: contain;
+                background-position: center bottom;
+                background-repeat: no-repeat;
+                
+                &.character {
+                    background-size: 100% 200%;
+                    background-position: center top;
+                    mix-blend-mode: difference;
+                    background: black !important;
+                }
+                
+            }
+            
+        }
+        
+        .shadow {
+            background-size: contain;
+            background-position: center bottom;
+            background-repeat: no-repeat;
+        }
+        
+     
+        
+    }
+    
+}
+
+.boading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    margin: 0;
+}
+
+.menu-button {
+    
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    width: 141px;
+    height: 72px;
+    background: url('assets/menu.svg');
+    //mix-blend-mode: difference;
+    cursor: pointer;
+    
+}
+
+.merch-label {
+    
+    &__name {
+        width: 80%;
+        float: left;
+    }
+    
+    &__price {
+        float: right;
+    }
+    
+}
